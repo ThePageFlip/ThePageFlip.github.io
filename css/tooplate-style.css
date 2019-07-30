@@ -80,6 +80,15 @@ a:focus {
 	overflow: auto;
 }
 
+.tm-navbar-bg .searchBar {
+	display: border-box;
+	width: 40%;
+}
+
+.tm-navbar-bg .searchBar #input {
+	width: 80%;
+}
+
 .navbar-toggler {
 	float: right;
 	font-size: 1.75rem;
