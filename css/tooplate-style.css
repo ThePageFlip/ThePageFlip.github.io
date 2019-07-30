@@ -774,6 +774,8 @@ figure.effect-bubba:hover p {
 		height: 80px;
 	}
 
+	.sidenav { margin-top: 80px }
+
 	.tm-social-icons-container { margin-bottom: 20px; }
 
 	.cd-full-width .container-fluid {
@@ -850,11 +852,12 @@ figure.effect-bubba:hover p {
 }
 
 @media only screen and (min-width: 1333px) {
+	.sidenav { margin-top: 110px }
 	.cd-slider-nav a,
 	.navbar-nav .nav-link {
 		font-size: 1.2em;
 		width: 160px;
-		height: 110px;
+		height: 60px;
 	}
 	.cd-slider-nav a.navbar-brand { font-size: 3.5rem; }
 
@@ -876,4 +879,48 @@ figure.effect-bubba:hover p {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.tm-2-col-textbox-2 { margin-right: 15px; }
 	#google-map { height: 520px; }
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/*.column {
+  float: left;
+  }
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75% !important;
+}*/
+
+
+.sidenav {
+	margin-top: 100px;
+  	width: 220px;
+  	position: fixed;
+  	z-index: 1;
+  	top: 20px;
+  	left: 10px;
+  	background: #eee;
+  	overflow-x: hidden;
+  	padding: 8px 0;
+
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px !important;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196F3;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+	margin-left: 240px;
 }
