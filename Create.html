@@ -55,14 +55,14 @@ http://www.tooplate.com/view/2086-multi-color
 			</div>
                         <div class="collapse navbar-toggleable-md text-xs-center text-uppercase tm-navbar" id="tmNavbar">
                             <ul class="nav navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#0" data-no="10">New Listing</a>
+                                <li class="nav-item active selected">
+                                    <a class="nav-link" href="Create.html" data-no="10">New Listing</a>
                                 </li> 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#0" data-no="12">Contact Us</a>
+                                    <a class="nav-link" href="Contact_Us.html" data-no="11">Contact Us</a>
                                 </li>                      
-                                <li class="nav-item active selected">
-                                    <a class="nav-link" href="#0" data-no="11">Logout</a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Login_Page.html" data-no="12">Logout</a>
                                 </li>
                             </ul>
                         </div>                        
@@ -158,6 +158,11 @@ http://www.tooplate.com/view/2086-multi-color
                                                         <input type="text" id="book_price" name="book_price" class="form-control" placeholder="Price"  required/>
                                                     </div>
 
+                                                    <input type="checkbox" name="Sell" value="Sell"> Sell &nbsp&nbsp
+                                                    <input type="checkbox" name="Rent" value="Rent"> Rent &nbsp&nbsp
+                                                    <input type="checkbox" name="Lend" value="Lend"> Lend &nbsp&nbsp
+                                                    <input type="checkbox" name="Giveaway" value="Giveaway"> Giveaway<br><br>
+
                                                     <div class="form-group">
                                                         <input type="text" id="book_condition" name="book_condition" class="form-control" placeholder="Condition"  required/>
                                                     </div>
@@ -167,19 +172,67 @@ http://www.tooplate.com/view/2086-multi-color
                                                     </div>
 
                                                     <div class="form-group">
+                                                        <input type="text" id="owner_location" name="owner_location" class="form-control" placeholder="City Location"  required/>
+                                                    </div>
+
+                                                    <select name="state">
+                                                        <option value="Alabama">Alabama</option>
+                                                        <option value="Alaska">Alaska</option>
+                                                        <option value="Arizona">Arizona</option>
+                                                        <option value="Arkansas">Arkansas</option>
+                                                        <option value="California">California</option>
+                                                        <option value="Colorado">Colorado</option>
+                                                        <option value="Connecticut">Connecticut</option>
+                                                        <option value="Delaware">Delaware</option>
+                                                        <option value="Florida">Florida</option>
+                                                        <option value="Georiga">Georiga</option>
+                                                        <option value="Hawaii">Hawaii</option>
+                                                        <option value="Idaho">Idaho</option>
+                                                        <option value="Illinios">Illinios</option>
+                                                        <option value="Indiana">Indiana</option>
+                                                        <option value="Iowa">Iowa</option>
+                                                        <option value="Kansas">Kansas</option>
+                                                        <option value="Kentucky">Kentucky</option>
+                                                        <option value="Louisiana">Louisiana</option>
+                                                        <option value="Maine">Maine</option>
+                                                        <option value="Maryland">Maryland</option>
+                                                        <option value="Massachusetts">Massachusetts</option>
+                                                        <option value="Michigan">Michigan</option>
+                                                        <option value="Minnesota">Minnesota</option>
+                                                        <option value="Mississippi">Mississippi</option>
+                                                        <option value="Missouri">Missouri</option>
+                                                        <option value="Montana">Montana</option>
+                                                        <option value="Nebraska">Nebraska</option>
+                                                        <option value="Nevada">Nevada</option>
+                                                        <option value="New Hampshire">New Hampshire</option>
+                                                        <option value="New Jersey">New Jersey</option>
+                                                        <option value="New Mexico">New Mexico</option>
+                                                        <option value="New York">New York</option>
+                                                        <option value="North Carolina">North Carolina</option>
+                                                        <option value="North Dakota">North Dakota</option>
+                                                        <option value="Ohio">Ohio</option>
+                                                        <option value="Oklahoma">Oklahoma</option>
+                                                        <option value="Oregon">Oregon</option>
+                                                        <option value="Pennsylvania">Pennsylvania</option>
+                                                        <option value="Rhode Island">Rhode Island</option>
+                                                        <option value="South Carolina">South Carolina</option>
+                                                        <option value="South Dakota">South Dakota</option>
+                                                        <option value="Tennesssee">Tennesssee</option>
+                                                        <option value="Texas">Texas</option>
+                                                        <option value="Utah">Utah</option>
+                                                        <option value="Vermont">Vermont</option>
+                                                        <option value="Virginia">Virginia</option>
+                                                        <option value="Washington">Washington</option>
+                                                        <option value="West Virginia">West Virginia</option>
+                                                        <option value="Wisconsin">Wisconsin</option>
+                                                        <option value="Wyoming">Wyoming</option>
+                                                    </select><br><br>
+
+                                                    <div class="form-group">
                                                         <textarea id="owner_message" name="owner_message" class="form-control" rows="5" placeholder="Additional Information" required></textarea>
                                                     </div>
 
-                                                <button type="submit" class="pull-xs-right tm-submit-btn">Create</button>  
-
-                                            </div>
-
-                                            <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding tm-textbox-padding-contact">
-                                                <h2 class="tm-contact-info">2600 Clifton Ave. Cincinnati, Ohio 45246</h2>
-                                                <!-- google map goes here -->
-                                                <div id="googlemap">
-                                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3094.837634941635!2d-84.51713908511591!3d39.1329260406324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8841b38acb65ec25%3A0x4249b42781c0c5fc!2sUniversity+of+Cincinnati!5e0!3m2!1sen!2sus!4v1564508059295!5m2!1sen!2sus" width="100%" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
-                                                </div>
+                                                <button type="submit" class="pull-xs-right tm-submit-btn" onclick="window.location.href='https://thepageflip.github.io/All_Listings.html';">Create</button>  <!-- make sure to fix this html link -->
 
                                             </div>
 
